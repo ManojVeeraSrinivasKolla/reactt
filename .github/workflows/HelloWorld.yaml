@@ -1,10 +1,12 @@
-name: Greet usre  
+name: Greet user  
 on: push
+
 jobs:
-    greet:
-      runs-on: ubuntu-latest
-      steps:
-        name: grreet user
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet user
         run: echo "hello world!"
-        name: bye user
+
+      - name: Bye user
         run: echo "bye!"
