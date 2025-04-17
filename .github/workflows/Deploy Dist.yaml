@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: get code
-      run: |
-           echo "clonrepo"
-           echo "${{toJson(github)}}"
-           git clone https://github.com/${{github.repository}}.git myfiles
-           cd myfiles && ls
+      uses: actions/checkout@v3
+      # run: |
+      #      echo "clonrepo"
+      #      echo "${{toJson(github)}}"
+      #      git clone https://github.com/${{github.repository}}.git myfiles
+      #      cd myfiles && ls
